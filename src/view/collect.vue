@@ -1,6 +1,6 @@
 <template>
   <div>
-    开发中
+    <text>开发中</text>
   </div>
 </template>
 <script>

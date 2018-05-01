@@ -24,19 +24,19 @@ export default {
          {
           url:main+'/public/imgs/bottom_nav/collect_dark_icon.png',
           checkUrl:main+'/public/imgs/bottom_nav/collect_icon.png',
-          route:'/',
+          route:'/collect',
           name:'收藏'
         },
          {
           url:main+'/public/imgs/bottom_nav/heart_dark_icon.png',
           checkUrl:main+'/public/imgs/bottom_nav/heart_icon.png',
-          route:'/',
+          route:'/heart',
           name:'关注'
         },
          {
           url:main+'/public/imgs/bottom_nav/head_dark_icon.png',
           checkUrl:main+'/public/imgs/bottom_nav/head_icon.png',
-          route:'/',
+          route:'/my',
           name:'我的'
         },
       ],
@@ -52,6 +52,15 @@ export default {
               break;
           case '/home':
               this.index=1;
+              break;
+          case '/heart':
+              this.index=3;
+              break;
+          case '/collect':
+              this.index=2;
+              break;
+          case '/my':
+              this.index=4;
               break;
           default:
               this.index=0;

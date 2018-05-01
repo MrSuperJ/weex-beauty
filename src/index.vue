@@ -15,17 +15,10 @@ export default {
   computed:{
     showFooter(){
       var routes=this.$route.path
-      if(routes==='/home'||routes==='/') return true
+      if(routes==='/home'||routes==='/'||routes==='/collect'||routes==='/my'||routes==='/heart') return true
       else return false
     }
   },
-  //  watch:{
-  //   $route:function(to,from){
-  //       if(to.path=='/'||to.path=='/home'){
-          
-  //       }
-  //   }
-  // },
   data () {
     return {
       // logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'

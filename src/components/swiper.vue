@@ -1,9 +1,9 @@
 <template >
   <div>
-    <slider class="slider" interval="3000" auto-play="false">
+    <slider class="slider" interval="3000" auto-play="true">
      <div class="frame" v-for="(img,i) in imageList" @click="goInfo(i)" :key="i" v-if='imageList.length>0'>
        <image class="image" resize="cover" :src="img.url"></image>
-       <text class='text'>天使</text>
+       <text class='text'>1</text>
      </div>
    </slider>
   </div>
@@ -12,7 +12,7 @@
 <script>
 import {getImgUrl} from '../api';
 export default {
-  name:'swiper',
+  name:'Swiper',
   data(){
     return{
       resData:[]

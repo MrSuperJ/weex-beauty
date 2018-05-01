@@ -1,15 +1,15 @@
 <template >
   <div>
-      <s-wiper></s-wiper>
+      <swiper></swiper>
   </div>
 </template>
 
 <script>
-import Swiper from '../components/swiper.vue';
+import swiper from '../components/swiper.vue';
 export default {
   name:'home',
   components:{
-    Swiper
+    swiper
   },
   data(){
     return{
