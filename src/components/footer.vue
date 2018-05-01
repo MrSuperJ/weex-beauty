@@ -10,36 +10,37 @@
 </template>
 
 <script>
+const main='http://47.100.104.66:7001';   
 export default {
   data(){
     return {
       menuList:[
         {
-          url:'http://192.168.1.101:7001/public/imgs/bottom_nav/home_dark_icon.png',
-          checkUrl:'http://192.168.1.101:7001/public/imgs/bottom_nav/home_icon.png',
+          url:main+'/public/imgs/bottom_nav/home_dark_icon.png',
+          checkUrl:main+'/public/imgs/bottom_nav/home_icon.png',
           route:'/home',
           name:'首页'
         },
          {
-          url:'http://192.168.1.101:7001/public/imgs/bottom_nav/collect_dark_icon.png',
-          checkUrl:'http://192.168.1.101:7001/public/imgs/bottom_nav/collect_icon.png',
+          url:main+'/public/imgs/bottom_nav/collect_dark_icon.png',
+          checkUrl:main+'/public/imgs/bottom_nav/collect_icon.png',
           route:'/',
           name:'收藏'
         },
          {
-          url:'http://192.168.1.101:7001/public/imgs/bottom_nav/heart_dark_icon.png',
-          checkUrl:'http://192.168.1.101:7001/public/imgs/bottom_nav/heart_icon.png',
+          url:main+'/public/imgs/bottom_nav/heart_dark_icon.png',
+          checkUrl:main+'/public/imgs/bottom_nav/heart_icon.png',
           route:'/',
           name:'关注'
         },
          {
-          url:'http://192.168.1.101:7001/public/imgs/bottom_nav/head_dark_icon.png',
-          checkUrl:'http://192.168.1.101:7001/public/imgs/bottom_nav/head_icon.png',
+          url:main+'/public/imgs/bottom_nav/head_dark_icon.png',
+          checkUrl:main+'/public/imgs/bottom_nav/head_icon.png',
           route:'/',
           name:'我的'
         },
       ],
-      index:0
+      index:0,
     }
   },
   watch:{
