@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// import footer from '../components/footer.vue';
 import vItem from '../components/item.vue';
 export default {
   name:'home',

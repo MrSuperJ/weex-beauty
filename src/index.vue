@@ -28,13 +28,10 @@ export default {
   // },
   data () {
     return {
-      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
+      // logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
     }
   },
   methods:{
-    gohrd:function(){
-      this.$router.push({name:'HelloWorld'});
-    }
   },
   watch:{
     $route:function(from,to){
